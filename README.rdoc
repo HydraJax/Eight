@@ -33,5 +33,47 @@ The Awaited Journey (Part Two)
 
   restart server if you get a ton of errors and know not what they mean....moving on
 
+The Awaited Journey (Part Three)
+
+rails generate scaffold Thing name:string description:text     generated the model THING with name and description
+
+SCAFOLD FILES
+
+      invoke  active_record....migrations
+      create    db/migrate/20140528055411_create_things.rb
+      create    app/models/thing.rb.....this is our model
+      invoke    rspec
+      create      spec/models/thing_spec.rb....this is our test for the rspec model
+      invoke  resource_route
+       route    resources :things....these are our routes
+      invoke  scaffold_controller
+      create    app/controllers/things_controller.rb
+      invoke    erb...this is our controller
+      create      app/views/things...these are all our views for the layouts
+      create      app/views/things/index.html.erb
+      create      app/views/things/edit.html.erb
+      create      app/views/things/show.html.erb
+      create      app/views/things/new.html.erb
+      create      app/views/things/_form.html.erb
+      invoke    rspec.....this is our controller spec file
+      create      spec/controllers/things_controller_spec.rb....these will be the spec files for our views...each
+      create      spec/views/things/edit.html.erb_spec.rb
+      create      spec/views/things/index.html.erb_spec.rb
+      create      spec/views/things/new.html.erb_spec.rb
+      create      spec/views/things/show.html.erb_spec.rb
+      create      spec/routing/things_routing_spec.rb
+      invoke      rspec
+      create        spec/requests/things_spec.rb
+      invoke    helper...these are all our spec helpers that assist the specs
+      create      app/helpers/things_helper.rb
+      invoke      rspec
+      create        spec/helpers/things_helper_spec.rb
+      invoke    jbuilder...to help working with json
+      create      app/views/things/index.json.jbuilder
+      create      app/views/things/show.json.jbuilder
+      invoke  assets
+      invoke    coffee...I dont think we need coffee
+      create      app/assets/javascripts/things.js.coffee
+      invoke    scss
 
 
