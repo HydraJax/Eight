@@ -9,3 +9,12 @@ in git I did an add commit , added a remote origin my github account, and git pu
 4. created a database for the app by running rake db create and migrate.
 5. Ran rails g rspec:install
 6. gemfile lock is what gems you had when you did bundle
+
+The Awaited Journey (Part Two)
+
+ I created a branch helloworl_rspec and added the gem capybarra which deals more with user interaction (clicking and responses)
+
+ IN testing there are 4 steps:setup-class object or model to be tested (user=User.new), exercise tests (user.save) the sysytem, verify: results measured against developers expectations (user-should not be_nil)
+
+ I created a folder and file features/hello_world_spec.rb and added code that would test if hello world was included in a view and if it had a h1 tag
+

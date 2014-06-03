@@ -18,6 +18,7 @@ group :development, :test do
     gem 'rspec-rails'
 end
 
+gem 'capybara'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
