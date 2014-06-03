@@ -18,3 +18,20 @@ The Awaited Journey (Part Two)
 
  I created a folder and file features/hello_world_spec.rb and added code that would test if hello world was included in a view and if it had a h1 tag
 
+ Modified the rspec helper, deleted unused files with git rm, after we used rails g controler pages(name of controller) helloworld(name of action ...then modified the route)
+
+ Day Three
+
+ installed bootstrap gems, bundle install then changed the navbar  VIA rails generate bootstrap:install -f.......nice to have a template for the navebar
+
+ rspec tests still pass
+
+ made a link to the view page link_to Hello World, hellowworld_path
+
+ changed the scss file      $navbar-inverse-bg:                         rgb(144,176,0) !default;
+  to change the navbar header on bootstrap
+
+  restart server if you get a ton of errors and know not what they mean....moving on
+
+
+
