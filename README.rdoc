@@ -92,3 +92,8 @@ end
   200.times do
     Thing.create(name: Forgery(:lorem_ipsum).words(2, :random =>true),description: Forgery(:lorem_ipsum).words(5, :random =>true))
   end
+
+  went to rails girls for help with devise workarounds
+
+  EIGHT....last chapter
+  associations

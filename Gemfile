@@ -20,6 +20,7 @@ group :development, :test do
     gem 'capybara'
 end
 
+gem 'devise'
 gem 'bootstrap-sass'
 gem 'bootstrap-generators', '~> 3.1.1'
 gem 'forgery'

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :things
 
   get '/helloworld' =>'pages#helloworld', as: :helloworld 
