@@ -76,4 +76,11 @@ SCAFOLD FILES
       create      app/assets/javascripts/things.js.coffee
       invoke    scss
 
+ERRORS are saved in the model.errors field
 
+factory girl thing, make and test objects in rails c
+
+
+Part 4-5-6
+
+Installed forgery gem

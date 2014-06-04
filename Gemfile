@@ -16,12 +16,13 @@ end
 
 group :development, :test do
     gem 'rspec-rails', '2.99'
+    gem "factory_girl_rails"
+    gem 'capybara'
 end
 
 gem 'bootstrap-sass'
 gem 'bootstrap-generators', '~> 3.1.1'
 
-gem 'capybara'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets

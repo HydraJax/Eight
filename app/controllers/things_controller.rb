@@ -5,7 +5,10 @@ class ThingsController < ApplicationController
   # GET /things.json
   def index
     @things = Thing.all
-  end
+    # respond_to do |format|
+    #     format.json {render json: @things}
+    #   end
+    end
 
   # GET /things/1
   # GET /things/1.json
