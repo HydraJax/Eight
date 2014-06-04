@@ -83,4 +83,12 @@ factory girl thing, make and test objects in rails c
 
 Part 4-5-6
 
-Installed forgery gem
+Installed forgery gem to populated seed data:  
+ 
+Thing.find_or_create_by(name: 'Sleeping pills') do |thing|
+ thing.description = 'Holloween candy'
+end
+
+  200.times do
+    Thing.create(name: Forgery(:lorem_ipsum).words(2, :random =>true),description: Forgery(:lorem_ipsum).words(5, :random =>true))
+  end

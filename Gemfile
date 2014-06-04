@@ -22,7 +22,7 @@ end
 
 gem 'bootstrap-sass'
 gem 'bootstrap-generators', '~> 3.1.1'
-
+gem 'forgery'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
