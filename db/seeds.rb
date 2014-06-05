@@ -15,9 +15,11 @@
 # Thing.find_or_create_by(name: 'Sleeping pills') do |thing|
 #   thing.description = 'Holloween candy'
 # end
+# user = User.create(email: "j@j.com", password: "12345678", password_confirmation:"12345678")
 
+user = User.first
   200.times do
-    Thing.create(name: Forgery(:lorem_ipsum).words(2, :random =>true),description: Forgery(:lorem_ipsum).words(5, :random =>true))
+    user.things.create(name: Forgery(:lorem_ipsum).words(2, :random =>true),description: Forgery(:lorem_ipsum).words(5, :random =>true))
   end
 
 

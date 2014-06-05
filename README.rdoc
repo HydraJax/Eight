@@ -97,3 +97,12 @@ end
 
   EIGHT....last chapter
   associations
+
+  user = User.first
+  200.times do
+    user.things.create(name: Forgery(:lorem_ipsum).words(2, :random =>true),description: Forgery(:lorem_ipsum).words(5, :random =>true))
+  end
+
+  created a user to access the things table .....WHEN USING DEVISE DO A USER.FIRST SINCE USER.CREATE WONT WORK MOST TIMES.
+
+  I added the user to things table with the associated reference so I could gain acces to it via blongs_to and Has_many in the models

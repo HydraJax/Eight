@@ -4,6 +4,9 @@ class Thing < ActiveRecord::Base
             length: {in: 3..250}
   validates :description,
             length: {maximum: 500}
+  validates :user_id, presence: true
+
+  belongs_to :user
 
   # validates :description, allow_nil: true,
   #           length: { maximum: 1000 }
